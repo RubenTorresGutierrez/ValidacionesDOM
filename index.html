@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="rtorresgutierrez.guadalupe@alumnado.fundacionloyola.net" />
+    <title>Validaciones DOM</title>
+  </head>
+  <body>
+    <form action="index.html" method="post">
+      <!--NOMBRE-->
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" />
+      <!--APELLIDOS-->
+      <label for="apellidos">Apellidos</label>
+      <input type="text" name="apellidos" id="apellidos" />
+      <!--EMAIL-->
+      <label for="email">eMail</label>
+      <input type="email" name="email" id="email" />
+      <!--NIF-->
+      <label for="nif">NIF</label>
+      <input type="text" name="nif" id="nif" />
+      <!--TELÉFONO-->
+      <label for="telefono">Teléfono</label>
+      <input type="text" name="telefono" id="telefono" />
+      <!--COMUNIDAD-->
+      <label for="comunidad">Comunidad Autónoma</label>
+      <select class="" name="comunidad" id="comunidad">
+        <option value="0" selected hidden>-- Selecciona --</option>
+        <option value="1">Andalucía</option>
+        <option value="2">Aragón</option>
+        <option value="3">Asturias, Principado de</option>
+        <option value="4">Balears, Illes</option>
+        <option value="5">Canarias</option>
+        <option value="6">Cantabria</option>
+        <option value="7">Castilla y León</option>
+        <option value="8">Castilla - La Mancha</option>
+        <option value="9">Cataluña</option>
+        <option value="10">Comunitat Valenciana</option>
+        <option value="11">Extremadura</option>
+        <option value="12">Galicia</option>
+        <option value="13">Madrid, Comunidad de</option>
+        <option value="14">Murcia, Región de</option>
+        <option value="15">Navarra, Comunidad Foral de</option>
+        <option value="16">País Vasco</option>
+        <option value="17">Rioja, La</option>
+        <option value="18">Ceuta</option>
+        <option value="19">Melilla</option>
+      </select>
+      <!-- POLÍTICA DE PRIVACIDAD -->
+      <input type="checkbox" name="politica" id="politica" />
+      <label for="politica">Acepto la Política de Privacidad</label>
+      <!-- PREGUNTA -->
+      <label for="pregunta">¿Te gusta el brocoli?</label>
+      <input type="radio" name="pregunta" id="si" />
+      <label for="si">Sí</label>
+      <input type="radio" name="pregunta" id="no" />
+      <label for="no">No</label>
+    </form>
+  </body>
+</html>
