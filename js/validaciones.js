@@ -54,7 +54,7 @@ function validar(evento){
     }
 
     //Comprobar Apellidos
-    let palabras = document.getElementById('iApellidos').value.split(' ');
+    let palabras = document.getElementById('iApellidos').value.trim().split(' ');
     if(palabras.length < 2){
         document.getElementById('iApellidos').style.borderColor = 'red';
         crearMensaje('Introduzca dos apellidos.', 1);
