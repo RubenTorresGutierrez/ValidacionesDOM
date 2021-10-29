@@ -22,7 +22,7 @@
             <label for="iNombre">Nombre</label>
           </div>
           <div class="col-75">
-            <input type="text" id="iNombre" pattern="[A-Za-z]{2,}" placeholder="Nombre" />
+            <input type="text" id="iNombre" pattern="[A-Za-z]{2,}" placeholder="Nombre" required />
           </div>
         </div>
         <!--APELLIDOS-->
@@ -31,7 +31,7 @@
             <label for="iApellidos">Apellidos</label>
           </div>
           <div class="col-75">
-            <input type="text" id="iApellidos" placeholder="Apellidos" />
+            <input type="text" id="iApellidos" placeholder="Apellidos" required />
           </div>
         </div>
         <!-- EDAD -->
@@ -40,7 +40,7 @@
             <label for="iEdad">Edad</label>
           </div>
           <div class="col-75">
-            <input type="number" id="iEdad" min="18" placeholder="¿Cuántos años tienes?" />
+            <input type="number" id="iEdad" min="18" placeholder="¿Cuántos años tienes?" required />
           </div>
         </div>
         <!--EMAIL-->
@@ -49,7 +49,7 @@
             <label for="iEmail">Correo electrónico</label>
           </div>
           <div class="col-75">
-            <input type="email" id="iEmail" placeholder="Correo electrónico" />
+            <input type="email" id="iEmail" placeholder="Correo electrónico" required />
           </div>
         </div>
         <!--NIF-->
@@ -58,7 +58,7 @@
             <label for="iNIF">NIF</label>
           </div>
           <div class="col-75">
-            <input type="text" id="iNIF" pattern="\d{8}[A-Za-z]" placeholder="NIF" />
+            <input type="text" id="iNIF" pattern="\d{8}[A-Za-z]" placeholder="NIF" required />
           </div>
         </div>
         <!--TELÉFONO-->
@@ -67,7 +67,7 @@
             <label for="iTelefono">Teléfono</label>
           </div>
           <div class="col-75">
-            <input type="text" id="iTelefono" pattern="\d{9}" placeholder="Teléfono" />
+            <input type="text" id="iTelefono" pattern="\d{9}" placeholder="Teléfono" required />
           </div>
         </div>
         <!--COMUNIDAD-->
@@ -76,8 +76,8 @@
             <label for="sComunidad">Comunidad Autónoma</label>
           </div>
           <div class="col-75">
-            <select id="sComunidad">
-              <option value="0" selected hidden>-- Seleccionar Comunidad --</option>
+            <select id="sComunidad" required>
+              <option value="" hidden>-- Seleccionar Comunidad --</option>
               <option value="1">Andalucía</option>
               <option value="2">Aragón</option>
               <option value="3">Asturias, Principado de</option>
@@ -106,9 +106,9 @@
             <p>¿Le gusta el brócoli?</p>
           </div>
           <div class="col-75">
-            <input type=radio id=rSi name=brocoli value=si />
+            <input type=radio id=rSi name=brocoli value=si required />
             <label for=rSi>Sí</label>
-            <input type=radio id=rNo name=brocoli value=no />
+            <input type=radio id=rNo name=brocoli value=no required />
             <label for=rNo>No</label>
           </div>
         </div>
